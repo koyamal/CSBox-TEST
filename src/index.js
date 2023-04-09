@@ -1,11 +1,11 @@
-import "./styles.css";
+const val = 0;
 
-console.log("TEST");
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+console.log(val);
+
+// val = 1;
+
+const val2 = { id: "1", name: "tom" };
+console.log(val2);
+
+val2.id = 100;
+console.log(val2);

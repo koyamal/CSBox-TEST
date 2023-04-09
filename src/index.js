@@ -9,3 +9,8 @@ console.log(val2);
 
 val2.id = 100;
 console.log(val2);
+
+const name = "Tom";
+const age = 43;
+
+console.log(`My name is ${name}. ${age} years old.`);

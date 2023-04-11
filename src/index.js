@@ -35,3 +35,17 @@ func2();
 const func3 = () => console.log("This is func3");
 
 func3();
+
+const myProfile = {
+  nameA: "Tom",
+  ageA: 43
+};
+
+const message1 = `My name is ${myProfile.name}. ${myProfile.age} years old.`;
+
+console.log(message1);
+
+const { nameA, ageA } = myProfile;
+
+const message2 = `My name is ${nameA}. ${ageA} years old.`;
+console.log(message2);

@@ -111,4 +111,10 @@ const nameArr = ["Tom", "Bob", "Jhon"];
 
 // console.log(newNumArr);
 
-nameArr.map((name, index) => console.log(`${index}: ${name}`));
+// nameArr.map((name, index) => console.log(`${index}: ${name}`));
+
+const newNameArr = nameArr.map((name) =>
+  name === "Tom" ? name : "Mr. " + name
+);
+
+console.log(newNameArr);

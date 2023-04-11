@@ -14,3 +14,8 @@ const name = "Tom";
 const age = 43;
 
 console.log(`My name is ${name}. ${age} years old.`);
+
+let val3 = 10;
+console.log(val3);
+val3 = 11;
+console.log(val3);

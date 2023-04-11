@@ -1,74 +1,87 @@
-const val = 0;
+// const val = 0;
 
-console.log(val);
+// console.log(val);
 
-// val = 1;
+// // val = 1;
 
-const val2 = { id: "1", name: "tom" };
-console.log(val2);
+// const val2 = { id: "1", name: "tom" };
+// console.log(val2);
 
-val2.id = 100;
-console.log(val2);
+// val2.id = 100;
+// console.log(val2);
 
-const name = "Tom";
-const age = 43;
+// const name = "Tom";
+// const age = 43;
 
-console.log(`My name is ${name}. ${age} years old.`);
+// console.log(`My name is ${name}. ${age} years old.`);
 
-let val3 = 10;
-console.log(val3);
-val3 = 11;
-console.log(val3);
+// let val3 = 10;
+// console.log(val3);
+// val3 = 11;
+// console.log(val3);
 
-function func1() {
-  console.log("This is func1");
-}
+// function func1() {
+//   console.log("This is func1");
+// }
 
-func1();
+// func1();
 
-const func2 = function () {
-  console.log("This is func2");
-};
+// const func2 = function () {
+//   console.log("This is func2");
+// };
 
-func2();
+// func2();
 
-const func3 = () => console.log("This is func3");
+// const func3 = () => console.log("This is func3");
 
-func3();
+// func3();
 
-const myProfile = {
-  nameA: "Tom",
-  ageA: 43
-};
+// const myProfile = {
+//   nameA: "Tom",
+//   ageA: 43
+// };
 
-const message1 = `My name is ${myProfile.name}. ${myProfile.age} years old.`;
+// const message1 = `My name is ${myProfile.name}. ${myProfile.age} years old.`;
 
-console.log(message1);
+// console.log(message1);
 
-const { nameA, ageA } = myProfile;
+// const { nameA, ageA } = myProfile;
 
-const message2 = `My name is ${nameA}. ${ageA} years old.`;
-console.log(message2);
+// const message2 = `My name is ${nameA}. ${ageA} years old.`;
+// console.log(message2);
 
-const sayHello = (name = "Bob") => {
-  console.log(`Hello, ${name}.`);
-};
+// const sayHello = (name = "Bob") => {
+//   console.log(`Hello, ${name}.`);
+// };
 
-sayHello("Tom");
-sayHello();
+// sayHello("Tom");
+// sayHello();
 
-const arr1 = [1, 3];
-// const [a, b, c, d, e] = ...arr1;
-console.log(...arr1);
+// const arr1 = [1, 3];
+// // const [a, b, c, d, e] = ...arr1;
+// console.log(...arr1);
 
-const sumFunc = (num1, num2) => {
-  console.log(num1 + num2);
-};
+// const sumFunc = (num1, num2) => {
+//   console.log(num1 + num2);
+// };
 
-sumFunc(...arr1);
+// sumFunc(...arr1);
 
-const arr2 = [1, 2, 3, 4, 5];
-const [num1, num2, ...arr3] = arr2;
-console.log(num1);
-console.log(num2);
-console.log(arr3);
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
+
+const arr4 = [10, 20];
+const arr5 = [39, 50];
+
+const arr6 = arr4;
+const arr7 = [...arr4];
+
+arr6[0] = 100;
+console.log(arr6);
+console.log(arr4);
+arr7[0] = 200;
+console.log(arr7);
+console.log(arr4);

@@ -32,8 +32,6 @@ const func2 = function () {
 
 func2();
 
-const func3 = () => {
-  console.log("This is func3");
-};
+const func3 = () => console.log("This is func3");
 
 func3();

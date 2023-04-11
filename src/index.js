@@ -113,8 +113,25 @@ const nameArr = ["Tom", "Bob", "Jhon"];
 
 // nameArr.map((name, index) => console.log(`${index}: ${name}`));
 
-const newNameArr = nameArr.map((name) =>
-  name === "Tom" ? name : "Mr. " + name
-);
+// const newNameArr = nameArr.map((name) =>
+//   name === "Tom" ? name : "Mr. " + name
+// );
 
-console.log(newNameArr);
+// console.log(newNameArr);
+const val1 = 1 > 0 ? "true" : "false";
+console.log(val1);
+
+const num = "1300";
+// console.log(num.toLocaleString());
+
+const formattedNum =
+  typeof num === "number" ? num.toLocaleString() : "Input number";
+
+console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "over 100" : "under 100";
+};
+
+console.log(checkSum(100, 11));
+console.log(checkSum(10, 11));

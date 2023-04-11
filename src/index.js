@@ -56,3 +56,13 @@ const sayHello = (name = "Bob") => {
 
 sayHello("Tom");
 sayHello();
+
+const arr1 = [1, 3];
+// const [a, b, c, d, e] = ...arr1;
+console.log(...arr1);
+
+const sumFunc = (num1, num2) => {
+  console.log(num1 + num2);
+};
+
+sumFunc(...arr1);

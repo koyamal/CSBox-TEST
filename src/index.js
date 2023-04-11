@@ -101,12 +101,14 @@ const nameArr = ["Tom", "Bob", "Jhon"];
 
 // console.log(nameArr2);
 
-nameArr.map((name) => console.log(name));
+// nameArr.map((name) => console.log(name));
 
-const numArr = [1, 2, 3, 4, 5];
+// const numArr = [1, 2, 3, 4, 5];
 
-const newNumArr = numArr.filter((num) => {
-  return num % 2 === 1;
-});
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
 
-console.log(newNumArr);
+// console.log(newNumArr);
+
+nameArr.map((name, index) => console.log(`${index}: ${name}`));

@@ -85,3 +85,6 @@ console.log(arr4);
 arr7[0] = 200;
 console.log(arr7);
 console.log(arr4);
+
+const arr77 = [...arr4, ...arr7];
+console.log(arr77);

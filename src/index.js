@@ -49,3 +49,10 @@ const { nameA, ageA } = myProfile;
 
 const message2 = `My name is ${nameA}. ${ageA} years old.`;
 console.log(message2);
+
+const sayHello = (name = "Bob") => {
+  console.log(`Hello, ${name}.`);
+};
+
+sayHello("Tom");
+sayHello();

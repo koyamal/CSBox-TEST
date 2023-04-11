@@ -73,18 +73,32 @@
 // console.log(num2);
 // console.log(arr3);
 
-const arr4 = [10, 20];
-const arr5 = [39, 50];
+// const arr4 = [10, 20];
+// const arr5 = [39, 50];
 
-const arr6 = arr4;
-const arr7 = [...arr4];
+// const arr6 = arr4;
+// const arr7 = [...arr4];
 
-arr6[0] = 100;
-console.log(arr6);
-console.log(arr4);
-arr7[0] = 200;
-console.log(arr7);
-console.log(arr4);
+// arr6[0] = 100;
+// console.log(arr6);
+// console.log(arr4);
+// arr7[0] = 200;
+// console.log(arr7);
+// console.log(arr4);
 
-const arr77 = [...arr4, ...arr7];
-console.log(arr77);
+// const arr77 = [...arr4, ...arr7];
+// console.log(arr77);
+
+const nameArr = ["Tom", "Bob", "Jhon"];
+
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+
+// console.log(nameArr2);
+
+nameArr.map((name) => console.log(name));

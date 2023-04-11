@@ -19,3 +19,21 @@ let val3 = 10;
 console.log(val3);
 val3 = 11;
 console.log(val3);
+
+function func1() {
+  console.log("This is func1");
+}
+
+func1();
+
+const func2 = function () {
+  console.log("This is func2");
+};
+
+func2();
+
+const func3 = () => {
+  console.log("This is func3");
+};
+
+func3();

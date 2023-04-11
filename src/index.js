@@ -89,7 +89,7 @@
 // const arr77 = [...arr4, ...arr7];
 // console.log(arr77);
 
-const nameArr = ["Tom", "Bob", "Jhon"];
+// const nameArr = ["Tom", "Bob", "Jhon"];
 
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(nameArr[index]);
@@ -118,20 +118,26 @@ const nameArr = ["Tom", "Bob", "Jhon"];
 // );
 
 // console.log(newNameArr);
-const val1 = 1 > 0 ? "true" : "false";
-console.log(val1);
+// const val1 = 1 > 0 ? "true" : "false";
+// console.log(val1);
 
-const num = "1300";
+// const num = "1300";
 // console.log(num.toLocaleString());
 
-const formattedNum =
-  typeof num === "number" ? num.toLocaleString() : "Input number";
+// const formattedNum =
+//   typeof num === "number" ? num.toLocaleString() : "Input number";
 
-console.log(formattedNum);
+// console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "over 100" : "under 100";
-};
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "over 100" : "under 100";
+// };
 
-console.log(checkSum(100, 11));
-console.log(checkSum(10, 11));
+// console.log(checkSum(100, 11));
+// console.log(checkSum(10, 11));
+
+console.log(0 || 10);
+console.log(20 || 0);
+
+console.log(1 && 2);
+console.log(0 && 100);

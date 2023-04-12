@@ -15,14 +15,31 @@ const onClickAdd = () => {
   const completeButton = document.createElement("button");
   completeButton.innerText = "完了";
   completeButton.addEventListener("click", () => {
-    alert("完了");
+    const completeText = completeButton.parentNode.childNodes[0].innerText;
+    const p = document.createElement("p");
+    p.innerText = completeText;
+
+    const backButton = document.createElement("button");
+    backButton.innerText = "戻す";
+
+    const div = document.createElement("div");
+    div.className = "list-row";
+
+    const li = document.createElement("li");
+
+    div.appendChild(p);
+    div.appendChild(backButton);
+
+    li.appendChild(div);
+
+    document.getElementById("complete-list").appendChild(li);
+    deleteFromIncompleteList(completeButton);
   });
 
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
   deleteButton.addEventListener("click", () => {
-    const deleteTarget = deleteButton.parentNode.parentNode;
-    document.getElementById("impomplete-list").removeChild(deleteTarget);
+    deleteFromIncompleteList(deleteButton);
   });
 
   div.appendChild(p);
@@ -37,5 +54,10 @@ const onClickAdd = () => {
 // document.getElementById("add-button").addEventListener("click", () => {
 //   onClickAdd();
 // });
+
+const deleteFromIncompleteList = (target) => {
+  const deleteTarget = target.parentNode.parentNode;
+  document.getElementById("impomplete-list").removeChild(deleteTarget);
+};
 
 document.getElementById("add-button").addEventListener("click", onClickAdd);

@@ -12,13 +12,27 @@ const onClickAdd = () => {
   const p = document.createElement("p");
   p.innerText = inputText;
 
+  const completeButton = document.createElement("button");
+  completeButton.innerText = "完了";
+  completeButton.addEventListener("click", () => {
+    alert("完了");
+  });
+
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "削除";
+  deleteButton.addEventListener("click", () => {
+    alert("削除");
+  });
+
   div.appendChild(p);
+  div.appendChild(completeButton);
+  div.appendChild(deleteButton);
 
   li.appendChild(div);
 
   document.getElementById("impomplete-list").appendChild(li);
 
-  // console.log(li);
+  console.log(li);
 };
 
 // document.getElementById("add-button").addEventListener("click", () => {

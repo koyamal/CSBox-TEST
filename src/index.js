@@ -21,7 +21,8 @@ const onClickAdd = () => {
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
   deleteButton.addEventListener("click", () => {
-    alert("削除");
+    const deleteTarget = deleteButton.parentNode.parentNode;
+    document.getElementById("impomplete-list").removeChild(deleteTarget);
   });
 
   div.appendChild(p);
@@ -31,8 +32,6 @@ const onClickAdd = () => {
   li.appendChild(div);
 
   document.getElementById("impomplete-list").appendChild(li);
-
-  console.log(li);
 };
 
 // document.getElementById("add-button").addEventListener("click", () => {
